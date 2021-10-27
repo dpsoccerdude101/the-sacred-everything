@@ -1,0 +1,19 @@
+{
+  "name": "the-sacred-everything",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "get-google-fonts": "^1.2.2",
+    "haunted": "^4.8.2",
+    "haunted-router": "^0.2.1",
+    "material-components-web": "^13.0.0"
+  }
+}
