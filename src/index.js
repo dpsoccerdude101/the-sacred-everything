@@ -1,5 +1,6 @@
 import "./components/Main.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "material-components-web/dist/material-components-web.min.css";
 import "../assets/css/bd-coming-soon.css";
