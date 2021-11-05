@@ -1,4 +1,6 @@
 import { component, html, useState, useEffect } from "haunted";
+import "./common/Navbar.js";
+import "./common/Footer.js";
 import { getText, stringToHTML } from "../tools/utils";
 import { marked } from "marked";
 import aboutUsText from "../../content/about-us.md?url";
@@ -20,25 +22,15 @@ const AboutUs = () => {
   return html`<div>
     <header>
       <div class="container">
-        <nav class="navbar navbar-dark bg-transparenet">
-          <a class="navbar-brand" href="#"> The Sacred Everything </a>
-          <span class="navbar-text ml-auto d-none d-sm-inline-block"> </span>
-          <span class="navbar-text d-none d-sm-inline-block">
-            <a is="router-link" href="/about-us">About Us</a>
-          </span>
-        </nav>
+        <nav-bar></nav-bar>
       </div>
     </header>
     <main class="my-auto">
       <div class="container">
-        <h1 class="page-title">The Sacred Everything</h1>
+        <h1 class="aboutUs-title">The Sacred Everything: About Us</h1>
         <p class="page-description">${markupText ? markupText : ``}</p>
         <p>Additional Resources</p>
-        <nav class="footer-social-links">
-          <a href="https://medium.com/@travis.p.sheehan" class="social-link"
-            ><i class="mdi mdi-medium"></i
-          ></a>
-        </nav>
+        <foot-er></foot-er>
       </div>
     </main>
     >

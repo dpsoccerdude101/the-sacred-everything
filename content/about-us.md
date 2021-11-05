@@ -1,1 +1,1 @@
-Hello and welcome to JOne's Barbecue & Foot Massage
+Hello and welcome to Jone's Barbecue & Foot Massage

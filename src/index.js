@@ -11,12 +11,12 @@ import { useRoutes } from "haunted-router";
 
 const App = () => {
   const routeResult = useRoutes(mainRoutes);
-  const screenWidth = useState(
+  /* const screenWidth = useState(
     window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth
   );
-  console.log(screenWidth);
+  console.log(screenWidth); */
   return html`${routeResult}`;
 };
 customElements.define("app-page", component(App, { useShadowDOM: false }));
