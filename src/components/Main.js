@@ -1,6 +1,21 @@
-import { component, html } from "haunted";
+import { component, html, useState, useEffect } from "haunted";
+import { getText, stringToHTML } from "../tools/utils";
+import { marked } from "marked";
+import cmsText from "../page-description.md?url";
+
+marked.setOptions({
+  breaks: true,
+});
 
 const Main = () => {
+  const [markupText, setMarkupText] = useState();
+
+  useEffect(async () => {
+    const text = await getText(cmsText);
+    const markupStr = marked(text);
+    setMarkupText(stringToHTML(markupStr));
+  }, []);
+
   return html`<div>
     <header>
       <div class="container">
@@ -18,13 +33,7 @@ const Main = () => {
     <main class="my-auto">
       <div class="container">
         <h1 class="page-title">The Sacred Everything</h1>
-        <p class="page-description">
-          A podcast that asks,
-          <i
-            >“What would the world look like if we treated ourselves, our
-            communities, and the natural world as sacred?”</i
-          >
-        </p>
+        <p class="page-description">${markupText ? markupText : ``}</p>
         <p>Additional Resources</p>
         <nav class="footer-social-links">
           <a href="https://medium.com/@travis.p.sheehan" class="social-link"

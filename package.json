@@ -14,6 +14,7 @@
     "get-google-fonts": "^1.2.2",
     "haunted": "^4.8.2",
     "haunted-router": "^0.2.1",
+    "marked": "^4.0.0",
     "material-components-web": "^13.0.0"
   }
 }
