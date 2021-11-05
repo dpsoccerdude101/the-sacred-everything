@@ -32,7 +32,6 @@ const Main = () => {
         <foot-er></foot-er>
       </div>
     </main>
-    >
   </div>`;
 };
 

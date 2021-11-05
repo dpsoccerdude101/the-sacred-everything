@@ -33,7 +33,6 @@ const AboutUs = () => {
         <foot-er></foot-er>
       </div>
     </main>
-    >
   </div>`;
 };
 
