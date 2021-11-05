@@ -1,18 +1,18 @@
 import { component, html, useState, useEffect } from "haunted";
 import { getText, stringToHTML } from "../tools/utils";
 import { marked } from "marked";
-import cmsText from "../../content/page-description.md?url";
+import aboutUsText from "../../content/about-us.md?url";
 import "haunted-router";
 
 marked.setOptions({
   breaks: true,
 });
 
-const Main = () => {
+const AboutUs = () => {
   const [markupText, setMarkupText] = useState();
 
   useEffect(async () => {
-    const text = await getText(cmsText);
+    const text = await getText(aboutUsText);
     const markupStr = marked(text);
     setMarkupText(stringToHTML(markupStr));
   }, []);
@@ -45,7 +45,4 @@ const Main = () => {
   </div>`;
 };
 
-customElements.define(
-  "main-component",
-  component(Main, { useShadowDOM: false })
-);
+customElements.define("about-us", component(AboutUs, { useShadowDOM: false }));
