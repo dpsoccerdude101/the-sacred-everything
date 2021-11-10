@@ -28,7 +28,6 @@ const Main = () => {
       <div class="container">
         <h1 class="page-title">The Sacred Everything</h1>
         <p class="page-description">${markupText ? markupText : ``}</p>
-        <p>Additional Resources</p>
         <foot-er></foot-er>
       </div>
     </main>

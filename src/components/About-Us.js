@@ -27,9 +27,8 @@ const AboutUs = () => {
     </header>
     <main class="my-auto">
       <div class="container">
-        <h1 class="aboutUs-title">The Sacred Everything: About Us</h1>
+        <h1 class="aboutUs-title">About Us:</h1>
         <p class="page-description">${markupText ? markupText : ``}</p>
-        <p>Additional Resources</p>
         <foot-er></foot-er>
       </div>
     </main>

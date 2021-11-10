@@ -10,12 +10,12 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^4.4.1",
     "get-google-fonts": "^1.2.2",
     "haunted": "^4.8.2",
     "haunted-router": "^0.2.1",
-    "marked": "^4.0.0",
     "jquery": "^3.6.0",
-    "material-components-web": "^13.0.0"
+    "marked": "^4.0.0"
   }
 }
