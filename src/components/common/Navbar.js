@@ -4,7 +4,10 @@ const Navbar = () => {
   return html`
     <nav class="navbar navbar-dark bg-transparenet">
       <a is="router-link" class="navbar-brand" href="/"
-        ><img id="navbar-logo" src="../../../assets/images/logo.svg?url" alt="The Sacred Everything Logo"
+        ><img
+          id="navbar-logo"
+          src="../../../assets/images/logo.svg?raw"
+          alt="The Sacred Everything Logo"
       /></a>
       <span class="navbar-text ml-auto d-none d-sm-inline-block"> </span>
       <span class="navbar-text d-none d-sm-inline-block">
