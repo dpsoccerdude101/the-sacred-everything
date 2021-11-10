@@ -1,23 +1,62 @@
 @import url("/fonts/fonts.css");
 body {
-  font-family: "Karla", sans-serif;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)),
     url("../images/bg1.jpg");
   /* background-image: url("../images/bg1.jpg"); */
-  background-size: cover;
+  background-size: 200%;
   background-repeat: no-repeat;
   background-position: center;
   color: #ffffff;
   padding-bottom: 75px;
 }
+
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+  font-family: "Karla", sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1em;
+  margin-top: 3em;
+}
+p,
+ul,
+ol {
+  margin-bottom: 2em;
+}
+h1 {
+  margin-bottom: 1em;
+}
+#navbar-logo {
+  background-color: #ffffff;
+  height: 12vh;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+
 @media (min-width: 768px) {
   body {
     padding-bottom: 110px;
   }
 }
+@media (max-width: 768px) {
+  #navbar-logo {
+    height: 10vh;
+  }
+  body {
+    background-size: cover;
+  }
+}
 
 .navbar-brand {
-  margin-right: 0;
+  margin-right: auto;
 }
 .navbar-brand img {
   height: 21px;
@@ -66,11 +105,6 @@ body {
   .page-description {
     font-size: 14px;
   }
-}
-
-p {
-  font-size: 14px;
-  margin-bottom: 21px;
 }
 
 .footer-social-links .social-link {

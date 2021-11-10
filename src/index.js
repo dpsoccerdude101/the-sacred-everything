@@ -2,7 +2,6 @@ import "./components/Main.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "material-components-web/dist/material-components-web.min.css";
 import "../assets/css/bd-coming-soon.css";
 import "../assets/css/style.css"
 import { mainRoutes } from "./router.js";
@@ -11,12 +10,12 @@ import { useRoutes } from "haunted-router";
 
 const App = () => {
   const routeResult = useRoutes(mainRoutes);
-  const screenWidth = useState(
+  /* const screenWidth = useState(
     window.innerWidth ||
       document.documentElement.clientWidth ||
       document.body.clientWidth
   );
-  console.log(screenWidth);
+  console.log(screenWidth); */
   return html`${routeResult}`;
 };
 customElements.define("app-page", component(App, { useShadowDOM: false }));
